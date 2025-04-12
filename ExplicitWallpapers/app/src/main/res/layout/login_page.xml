@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundforloginpage">
+
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Register"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.169" />
+
+    <TextView
+        android:id="@+id/label_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Name:"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/inputusername"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/inputusername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/label_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Enter E-mail ID:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/inputemail"
+        app:layout_constraintStart_toStartOf="@+id/inputemail"
+        app:layout_constraintTop_toBottomOf="@+id/inputusername"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/inputemail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter E-mail ID"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/inputusername"
+        app:layout_constraintStart_toStartOf="@+id/inputusername"
+        app:layout_constraintTop_toBottomOf="@+id/inputusername" />
+
+    <TextView
+        android:id="@+id/label_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Password:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/inputpassword"
+        app:layout_constraintStart_toStartOf="@+id/inputpassword"
+        app:layout_constraintTop_toBottomOf="@+id/inputemail" />
+
+    <EditText
+        android:id="@+id/inputpassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/inputemail"
+        app:layout_constraintStart_toStartOf="@+id/inputemail"
+        app:layout_constraintTop_toBottomOf="@+id/inputemail" />
+
+    <!-- Button to show/hide password -->
+    <ImageButton
+        android:id="@+id/btnShowHidePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_visibility_off"
+        android:background="@null"
+        android:contentDescription="Show/Hide Password"
+        app:layout_constraintEnd_toEndOf="@+id/inputpassword"
+        app:layout_constraintTop_toTopOf="@+id/inputpassword" />
+
+    <TextView
+        android:id="@+id/label_confirmpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Password:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/inputconfirmpassword"
+        app:layout_constraintStart_toStartOf="@+id/inputconfirmpassword"
+        app:layout_constraintTop_toBottomOf="@+id/inputpassword" />
+
+    <EditText
+        android:id="@+id/inputconfirmpassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        app:layout_constraintEnd_toEndOf="@+id/inputpassword"
+        app:layout_constraintStart_toStartOf="@+id/inputpassword"
+        app:layout_constraintTop_toBottomOf="@+id/inputpassword" />
+
+    <ImageButton
+        android:id="@+id/btnShowHideConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_visibility_off"
+        android:background="@null"
+        android:contentDescription="Show/Hide Confirm Password"
+        app:layout_constraintEnd_toEndOf="@+id/inputconfirmpassword"
+        app:layout_constraintTop_toTopOf="@+id/inputconfirmpassword"
+    />
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="@+id/inputconfirmpassword"
+        app:layout_constraintStart_toStartOf="@+id/inputconfirmpassword"
+        app:layout_constraintTop_toBottomOf="@+id/inputconfirmpassword"
+        app:rippleColor="#019FCF" />
+</androidx.constraintlayout.widget.ConstraintLayout>

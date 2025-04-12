@@ -1,0 +1,24 @@
+mainActvity.java 
+private ActivityMainBinding binding;
+
+import com.sdk.explicitwallpapers.databinding.ActivityMainBinding;
+
+
+
+binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot(
+
+
+Gradle Build
+    buildFeatures{
+        viewBinding true
+    }
+
+Android Studio
+
+
+
+
+ActionBar
+        getSupportActionBar().setTitle("Wallpaper Preview");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
